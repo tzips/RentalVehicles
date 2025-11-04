@@ -7,9 +7,9 @@ import java.util.List;
 
 public class RegularCustomer implements Customer {
     private String name;
-    private List<Vehicle> rentedVehicles; // רשימת רכבים ששכר
+    private List<Vehicle> rentedVehicles;
 
-    // 🔹 בנאי
+
     public RegularCustomer(String name) {
         this.name = name;
         this.rentedVehicles = new ArrayList<>();
@@ -30,7 +30,6 @@ public class RegularCustomer implements Customer {
 
     @Override
     public List<Vehicle> getRentedVehicles() {
-        // מחזירים עותק לא ניתן לשינוי – עיקרון encapsulation
         return Collections.unmodifiableList(rentedVehicles);
     }
 }

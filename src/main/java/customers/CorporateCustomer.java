@@ -9,9 +9,9 @@ public class CorporateCustomer implements Customer {
     private String name;
     private String companyName;
     private List<Vehicle> rentedVehicles;
-    private static final double DISCOUNT_RATE = 0.1; // הנחת תאגיד 10%
+    private static final double DISCOUNT_RATE = 0.1;
 
-    // 🔹 בנאי
+
     public CorporateCustomer(String name, String companyName) {
         this.name = name;
         this.companyName = companyName;

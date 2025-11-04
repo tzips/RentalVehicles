@@ -5,11 +5,11 @@ import java.util.List;
 
     public interface Customer {
 
-        String getName(); // להחזיר שם הלקוח
+        String getName();
 
-        void rentVehicle(Vehicle vehicle, int days); // לשכור רכב למספר ימים
+        void rentVehicle(Vehicle vehicle, int days);
 
-        List<Vehicle> getRentedVehicles(); // להחזיר רשימת רכבים ששכר
+        List<Vehicle> getRentedVehicles();
     }
 
 

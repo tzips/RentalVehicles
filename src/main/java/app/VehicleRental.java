@@ -42,10 +42,6 @@ public class VehicleRental {
         printCustomerRentals(corporate);
     }
 
-    /**
-     * מתודת עזר להדפסת כל הרכבים ששכר לקוח מסוים
-     * (לצורך הצגת דוח מסכם בצורה נקייה)
-     */
     private static void printCustomerRentals(Customer customer) {
         List<Vehicle> vehicles = customer.getRentedVehicles();
         System.out.println(customer.getName() + " rented the following vehicles:");
