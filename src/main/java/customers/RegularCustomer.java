@@ -19,7 +19,7 @@ public class RegularCustomer implements Customer {
     public String getName() {
         return name;
     }
-
+    //דריסת המתודה מהאב למחיר רכב
     @Override
     public void rentVehicle(Vehicle vehicle, int days) {
         rentedVehicles.add(vehicle);
@@ -27,7 +27,7 @@ public class RegularCustomer implements Customer {
         System.out.println(name + " rented " + vehicle.getModel() +
                 " for " + days + " days. Total cost: " + cost);
     }
-
+    //דריסת המתודה מהאב לרשימת רכבי הלקוח
     @Override
     public List<Vehicle> getRentedVehicles() {
         return Collections.unmodifiableList(rentedVehicles);

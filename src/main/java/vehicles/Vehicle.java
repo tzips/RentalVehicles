@@ -6,10 +6,14 @@ public abstract class Vehicle {
     private String model;
     protected double rentalPrice;
 
-    public Vehicle(String licensePlate, String make, String model, double rentalPrice) {
+    public Vehicle(String licensePlate, String make, String model) {
         this.licensePlate = licensePlate;
         this.make = make;
         this.model = model;
+    }
+
+    public Vehicle(String licensePlate, String make, String model, double rentalPrice) {
+        this(licensePlate, make, model); // קריאה לבנאי הראשון
         this.rentalPrice = rentalPrice;
     }
 

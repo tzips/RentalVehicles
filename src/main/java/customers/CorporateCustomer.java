@@ -9,7 +9,7 @@ public class CorporateCustomer implements Customer {
     private String name;
     private String companyName;
     private List<Vehicle> rentedVehicles;
-    private static final double DISCOUNT_RATE = 0.1;
+    private static final double DISCOUNT_RATE = 0.1;//הנחה ללקוח תאגידי
 
 
     public CorporateCustomer(String name, String companyName) {
@@ -22,7 +22,7 @@ public class CorporateCustomer implements Customer {
     public String getName() {
         return name + " (" + companyName + ")";
     }
-
+    //דריסת המתודה מהאב למחיר רכב
     @Override
     public void rentVehicle(Vehicle vehicle, int days) {
         rentedVehicles.add(vehicle);
@@ -32,7 +32,7 @@ public class CorporateCustomer implements Customer {
                 " rented " + vehicle.getModel() +
                 " for " + days + " days with discount. Total cost: " + discountedCost);
     }
-
+    //דריסת המתודה מהאב לרשימת רכבי הלקוח
     @Override
     public List<Vehicle> getRentedVehicles() {
         return Collections.unmodifiableList(rentedVehicles);

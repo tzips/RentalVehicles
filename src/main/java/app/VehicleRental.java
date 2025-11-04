@@ -16,9 +16,9 @@ public class VehicleRental {
         // --------------------------
         // 🔹 שלב 1: יצירת רכבים לדוגמה
         // --------------------------
-        Vehicle car1 = new Car("123-11-456", "Toyota", "Corolla", 50.0, "Sedan");
-        Vehicle car2 = new Car("321-22-654", "Honda", "Civic", 60.0, "Hatchback");
-        Vehicle truck1 = new Truck("555-33-999", "Volvo", "FH16", 100.0, 10);
+        Vehicle car1 = new Car("123-11-456", "Toyota", "Corolla",  "Sedan");
+        Vehicle car2 = new Car("321-22-654", "Honda", "Civic",  "Hatchback");
+        Vehicle truck1 = new Truck("555-33-999", "Volvo", "FH16",  10);
 
         // --------------------------
         // 🔹 שלב 2: יצירת לקוחות
